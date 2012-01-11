@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<templates>
+	<template id="corona.ads.hide" autoinsert="true"
+		context="LuaUniversalTemplateContextType" description="Stop the showing of the ads and hide the banner."
+		enabled="true" name="ads.hide">ads.hide()</template>
+	<template id="corona.ads.init" autoinsert="true"
+		context="LuaUniversalTemplateContextType"
+		description="Initialize the Ads service library by specifying the name of the Ads service provider and the appId."
+		enabled="true" name="ads.init">ads.init( ${providerName}, ${appId} )</template>
+	<template id="corona.ads.show" autoinsert="true"
+		context="LuaUniversalTemplateContextType"
+		description="Begin showing the ads at the given screen location and the given refresh period."
+		enabled="true" name="ads.show">ads.show( ${adUnitType}, { x=${0}, y=${100}, interval=${5}, testMode=${false} } )</template>
+</templates>

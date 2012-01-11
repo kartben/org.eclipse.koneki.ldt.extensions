@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<templates>
+	<template id="corona.analytics.init" autoinsert="true"
+		context="LuaUniversalTemplateContextType" description="Initializes the analytics library."
+		enabled="true" name="analytics.init">analytics.init(${applicationKey})</template>
+	<template id="corona.analytics.logEvent" autoinsert="true"
+		context="LuaUniversalTemplateContextType"
+		description="Reports an event to the Flurry analytics service. The event can be any string value."
+		enabled="true" name="analytics.logEvent">analytics.logEvent(${eventID})</template>
+</templates>

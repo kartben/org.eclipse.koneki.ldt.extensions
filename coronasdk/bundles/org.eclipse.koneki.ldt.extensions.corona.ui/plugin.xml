@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?><!--
+    Copyright (c) 2009, 2011 Sierra Wireless and others.
+    All rights reserved. This program and the accompanying materials
+    are made available under the terms of the Eclipse Public License v1.0
+    which accompanies this distribution, and is available at
+    http://www.eclipse.org/legal/epl-v10.html
+
+    Contributors:
+        Sierra Wireless - initial API and implementation
+ -->
+
+<plugin>
+   <extension
+         point="org.eclipse.ui.editors.templates">
+	   <include
+          file="templates/ads_templates.xml">
+       </include>
+       <include
+          file="templates/analytics_templates.xml">
+       </include>
+       <include
+          file="templates/graphics_templates.xml">
+       </include>
+       <include
+          file="templates/physics_templates.xml">
+       </include>
+       <include
+          file="templates/runtime_templates.xml">
+       </include>
+       <include
+          file="templates/storyboard_templates.xml">
+       </include>
+       <include
+          file="templates/table_templates.xml">
+       </include>
+       <include
+          file="templates/timer_templates.xml">
+       </include>
+   </extension>
+   <extension
+         point="org.eclipse.ui.preferencePages">
+      <page
+            category="org.eclipse.koneki.ldt.ui.globalpreferencepage"
+            class="org.eclipse.koneki.ldt.extensions.corona.ui.internal.preferences.CoronaSDKPreferencePage"
+            id="org.eclipse.koneki.ldt.extensions.corona.ui.sdk"
+            name="Corona SDK">
+      </page>
+   </extension>
+   <extension
+         point="org.eclipse.ui.newWizards">
+      <wizard
+            category="org.eclipse.koneki.ldt.category"
+            class="org.eclipse.koneki.ldt.extensions.corona.ui.internal.wizards.NewCoronaSDKProjectWizard:org.eclipse.koneki.ldt.nature"
+            id="org.eclipse.koneki.ldt.extensions.corona.ui.wizard"
+            name="Corona SDK Project"
+            project="true">
+      </wizard>
+   </extension>
+</plugin>

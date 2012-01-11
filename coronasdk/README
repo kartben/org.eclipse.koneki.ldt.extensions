@@ -1,0 +1,5 @@
+A set of plug-ins that are extending Koneki Lua Development Tools with facilities to develop using the Corona SDK.
+It includes:
+* templates for Corona API (graphics, physics, runtimes, ...)
+* a wizard to create a new Corona project, already configured for debugging (TBD)
+* ...
